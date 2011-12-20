@@ -7,12 +7,12 @@ require("../nodevalbot/commands/vimeo.js");
 require("../nodevalbot/commands/lol.js");
 require("../nodevalbot/commands/urban.js");
 
-var room_id = 250295;
+var room_id = roomnumber;
 
 var instance = new Campfire({
   ssl     : true,
-  token   : "a839b09c0135adce24cebde6a7d048daeb19a9f8",
-  account : "punkave",
+  token   : "token",
+  account : "site name",
 });
 
 safesearch = false;
