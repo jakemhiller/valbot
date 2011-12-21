@@ -1,0 +1,265 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'XMLHttpRequest' ]
+info using npm@1.0.106
+info using node@v0.6.1
+verbose /usr/local/bin/node node symlink
+verbose config file /Users/chris/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+silly testEngine { name: 'campfire',
+silly testEngine   version: '0.1.1',
+silly testEngine   description: 'Use node.js to interact with Campfire.',
+silly testEngine   keywords: [ 'chat', 'campfire', 'CF' ],
+silly testEngine   homepage: 'https://github.com/tristandunn/node-campfire',
+silly testEngine   author: 
+silly testEngine    { name: 'Tristan Dunn',
+silly testEngine      email: 'hello@tristandunn.com',
+silly testEngine      url: 'http://tristandunn.com' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Aaron Quint',
+silly testEngine        email: 'aaron@quirkey.com',
+silly testEngine        url: 'http://www.quirkey.com' },
+silly testEngine      { name: 'Brian Donovan', url: 'http://brian-donovan.com' },
+silly testEngine      { name: 'Esad Hajdarevic', email: 'esad@esse.at' },
+silly testEngine      { name: 'Jon Ursenbach',
+silly testEngine        email: 'jon@ursenba.ch',
+silly testEngine        url: 'http://jon.ursenba.ch' } ],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/tristandunn/node-campfire.git' },
+silly testEngine   bugs: 
+silly testEngine    { email: 'hello@tristandunn.com',
+silly testEngine      url: 'https://github.com/tristandunn/node-campfire/issues' },
+silly testEngine   main: './lib/campfire',
+silly testEngine   licenses: 
+silly testEngine    [ { type: 'MIT',
+silly testEngine        url: 'https://github.com/tristandunn/node-campfire/blob/master/LICENSE' } ],
+silly testEngine   _id: 'campfire@0.1.1',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/chris/Dropbox/Projects/javascript/valbot/node_modules/campfire/package.json
+verbose loadDefaults campfire@0.1.1
+silly testEngine { name: 'cssom',
+silly testEngine   description: 'CSS Object Model implementation and CSS parser',
+silly testEngine   keywords: [ 'CSS', 'CSSOM', 'parser', 'styleSheet' ],
+silly testEngine   version: '0.2.1',
+silly testEngine   homepage: 'https://github.com/NV/CSSOM',
+silly testEngine   author: { name: 'Nikita Vasilyev', email: 'me@elv1s.ru' },
+silly testEngine   repository: { type: 'git', url: 'git://github.com/NV/CSSOM.git' },
+silly testEngine   bugs: { url: 'https://github.com/NV/CSSOM/issues' },
+silly testEngine   directories: { doc: './doc', lib: './lib', test: './test' },
+silly testEngine   main: './lib/index.js',
+silly testEngine   engines: { node: '>=0.2.0' },
+silly testEngine   licenses: [ { type: 'MIT', url: 'http://creativecommons.org/licenses/MIT/' } ],
+silly testEngine   _id: 'cssom@0.2.1',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/chris/Dropbox/Projects/javascript/valbot/node_modules/cssom/package.json
+verbose loadDefaults cssom@0.2.1
+silly testEngine { name: 'forever',
+silly testEngine   preferGlobal: 'true',
+silly testEngine   description: 'A simple CLI tool for ensuring that a given node script runs continuously (i.e. forever)',
+silly testEngine   version: '0.7.5',
+silly testEngine   author: { name: 'Nodejitsu Inc', email: 'info@nodejitsu.com' },
+silly testEngine   contributors: 
+silly testEngine    [ { name: 'Charlie Robbins', email: 'charlie@nodejitsu.com' },
+silly testEngine      { name: 'Fedor Indutny', email: 'fedor.indutny@gmail.com' },
+silly testEngine      { name: 'James Halliday', email: 'mail@substack.net' },
+silly testEngine      { name: 'Bradley Meck', email: 'bradley@nodejitsu.com' },
+silly testEngine      { name: 'Dominic Tarr', email: 'dominic@nodejitsu.com' } ],
+silly testEngine   repository: { type: 'git', url: 'git://github.com/nodejitsu/forever.git' },
+silly testEngine   keywords: [ 'cli', 'fault tolerant', 'sysadmin', 'tools' ],
+silly testEngine   dependencies: 
+silly testEngine    { cliff: '0.x.x',
+silly testEngine      clip: '0.x.x',
+silly testEngine      dnode: '0.8.x',
+silly testEngine      daemon: '0.3.x >=0.3.2',
+silly testEngine      flatiron: '0.1.x',
+silly testEngine      minimatch: '0.0.x',
+silly testEngine      nconf: '0.5.x',
+silly testEngine      optimist: '0.2.x',
+silly testEngine      pkginfo: '0.x.x',
+silly testEngine      portfinder: '0.x.x',
+silly testEngine      'ps-tree': '0.0.x',
+silly testEngine      timespan: '2.0.x',
+silly testEngine      watch: '0.4.x',
+silly testEngine      utile: '0.0.x',
+silly testEngine      winston: '0.5.x' },
+silly testEngine   devDependencies: { vows: '0.5.x' },
+silly testEngine   bin: { forever: './bin/forever', foreverd: './bin/foreverd' },
+silly testEngine   main: './lib/forever',
+silly testEngine   scripts: { test: 'vows --spec --isolate' },
+silly testEngine   engines: { node: '>= 0.4.0' },
+silly testEngine   _id: 'forever@0.7.5',
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/chris/Dropbox/Projects/javascript/valbot/node_modules/forever/package.json
+verbose loadDefaults forever@0.7.5
+WARN htmlparser@1.7.3 package.json: bugs['web'] should probably be bugs['url']
+silly testEngine { name: 'htmlparser',
+silly testEngine   description: 'Forgiving HTML/XML/RSS Parser in JS for *both* Node and Browsers',
+silly testEngine   version: '1.7.3',
+silly testEngine   author: { name: 'Chris Winberry', email: 'chris@winberry.net' },
+silly testEngine   contributors: [],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/tautologistics/node-htmlparser.git' },
+silly testEngine   bugs: 
+silly testEngine    { email: 'chris@winberry.net',
+silly testEngine      url: 'http://github.com/tautologistics/node-htmlparser/issues' },
+silly testEngine   os: [ 'linux', 'darwin', 'freebsd', 'win32' ],
+silly testEngine   directories: { lib: './lib/' },
+silly testEngine   main: './lib/htmlparser',
+silly testEngine   engines: { node: '>=0.1.33' },
+silly testEngine   licenses: 
+silly testEngine    [ { type: 'MIT',
+silly testEngine        url: 'http://github.com/tautologistics/node-htmlparser/raw/master/LICENSE' } ],
+silly testEngine   _id: 'htmlparser@1.7.3',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/chris/Dropbox/Projects/javascript/valbot/node_modules/htmlparser/package.json
+verbose loadDefaults htmlparser@1.7.3
+silly testEngine { name: 'jquery',
+silly testEngine   description: 'jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)',
+silly testEngine   url: 'http://jquery.com',
+silly testEngine   keywords: [ 'util', 'dom', 'jquery' ],
+silly testEngine   author: { name: 'John Resig', email: 'jeresig@gmail.com' },
+silly testEngine   contributors: [],
+silly testEngine   dependencies: { jsdom: '>=0.2.0', htmlparser: '>= 1.7.3' },
+silly testEngine   lib: '.',
+silly testEngine   main: './node-jquery.js',
+silly testEngine   version: '1.6.3',
+silly testEngine   _id: 'jquery@1.6.3',
+silly testEngine   devDependencies: {},
+silly testEngine   engines: { node: '*' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/chris/Dropbox/Projects/javascript/valbot/node_modules/jquery/package.json
+verbose loadDefaults jquery@1.6.3
+silly testEngine { author: { name: 'Alejandro Morales' },
+silly testEngine   name: 'n-vimeo',
+silly testEngine   description: 'Vimeo API data Integration an extension of vimeo-client',
+silly testEngine   version: '0.2.1',
+silly testEngine   keywords: [ 'api', 'vimeo' ],
+silly testEngine   repository: 
+silly testEngine    { type: 'git',
+silly testEngine      url: 'git://github.com/alejandromg/node-vimeo.git' },
+silly testEngine   main: 'vimeo',
+silly testEngine   engines: { node: '>=0.4.11' },
+silly testEngine   dependencies: { request: '*' },
+silly testEngine   _id: 'n-vimeo@0.2.1',
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/chris/Dropbox/Projects/javascript/valbot/node_modules/n-vimeo/package.json
+verbose loadDefaults n-vimeo@0.2.1
+silly testEngine { name: 'restler',
+silly testEngine   version: '0.2.3',
+silly testEngine   description: 'An HTTP client library for node.js',
+silly testEngine   contributors: [ { name: 'Dan Webb', email: 'dan@danwebb.net' } ],
+silly testEngine   homepage: 'https://github.com/danwrong/restler',
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   main: './lib/restler',
+silly testEngine   engines: { node: '>= 0.3.7' },
+silly testEngine   _id: 'restler@0.2.3',
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/chris/Dropbox/Projects/javascript/valbot/node_modules/restler/package.json
+verbose loadDefaults restler@0.2.3
+silly testEngine { name: 'scraper',
+silly testEngine   description: 'Easier web scraping using jQuery.',
+silly testEngine   version: '0.0.9',
+silly testEngine   author: { name: 'Mathias Pettersson', email: 'mape@mape.me' },
+silly testEngine   engines: [ 'node', node: '*' ],
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   main: './lib/scraper',
+silly testEngine   repository: { type: 'git', url: 'git://github.com/mape/node-scraper.git' },
+silly testEngine   dependencies: { request: '>=0.10.0', jsdom: '>=0.1.20' },
+silly testEngine   _id: 'scraper@0.0.9',
+silly testEngine   devDependencies: {},
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/chris/Dropbox/Projects/javascript/valbot/node_modules/scraper/package.json
+verbose loadDefaults scraper@0.0.9
+verbose has wscript [ undefined,
+verbose has wscript   { file: '/Users/chris/Dropbox/Projects/javascript/valbot/node_modules/contextify/package.json',
+verbose has wscript     contributors: false,
+verbose has wscript     serverjs: false,
+verbose has wscript     wscript: true } ]
+silly testEngine { author: { name: 'Brian McDaniel', email: 'brianmcd05@gmail.com' },
+silly testEngine   name: 'contextify',
+silly testEngine   description: 'Turn an object into a persistent execution context.',
+silly testEngine   keywords: [ 'context', 'vm' ],
+silly testEngine   version: '0.0.7',
+silly testEngine   repository: { type: 'git', url: 'git://github.com/brianmcd/contextify.git' },
+silly testEngine   main: './lib/contextify.js',
+silly testEngine   directories: { lib: './lib' },
+silly testEngine   engines: { node: '>=0.4.0' },
+silly testEngine   licenses: 
+silly testEngine    [ { type: 'MIT',
+silly testEngine        url: 'http://github.com/brianmcd/contextify/blob/master/LICENSE.txt' } ],
+silly testEngine   dependencies: {},
+silly testEngine   devDependencies: { nodeunit: '>=0.5.x' },
+silly testEngine   _id: 'contextify@0.0.7',
+silly testEngine   scripts: { preinstall: 'node-waf clean || true; node-waf configure build' },
+silly testEngine   _engineSupported: true,
+silly testEngine   _npmVersion: '1.0.106',
+silly testEngine   _nodeVersion: 'v0.6.1',
+silly testEngine   _defaultsLoaded: true }
+verbose caching /Users/chris/Dropbox/Projects/javascript/valbot/node_modules/contextify/package.json
+verbose loadDefaults contextify@0.0.7
+verbose into /Users/chris/Dropbox/Projects/javascript/valbot [ 'XMLHttpRequest' ]
+verbose cache add XMLHttpRequest
+verbose cache add [ 'XMLHttpRequest', null ]
+silly cache add: name, spec, args [ undefined, 'XMLHttpRequest', [ 'XMLHttpRequest', null ] ]
+verbose parsed url { pathname: 'XMLHttpRequest',
+verbose parsed url   path: 'XMLHttpRequest',
+verbose parsed url   href: 'XMLHttpRequest' }
+info addNamed [ 'XMLHttpRequest', '' ]
+verbose addNamed [ null, '' ]
+verbose GET XMLHttpRequest
+verbose raw, before any munging XMLHttpRequest
+verbose url resolving [ 'https://registry.npmjs.org/', './XMLHttpRequest' ]
+verbose url resolved https://registry.npmjs.org/XMLHttpRequest
+silly get cb [ 404,
+silly get cb   { server: 'CouchDB/1.1.0 (Erlang OTP/R14B04)',
+silly get cb     date: 'Wed, 21 Dec 2011 18:30:24 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '52',
+silly get cb     'cache-control': 'must-revalidate' } ]
+ERR! 404 'XMLHttpRequest' is not in the npm registry.
+ERR! 404 You could maybe bug the author to publish it
+ERR! 404 Note that you can also install from a tarball or folder.
+ERR! 
+ERR! System Darwin 11.2.0
+ERR! command "node" "/usr/local/bin/npm" "install" "XMLHttpRequest"
+ERR! cwd /Users/chris/Dropbox/Projects/javascript/valbot
+ERR! node -v v0.6.1
+ERR! npm -v 1.0.106
+ERR! code E404
+verbose exit [ 1, true ]
