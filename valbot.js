@@ -28,11 +28,11 @@ Val.prototype.init = function(room) {
 
 Val.prototype.command = function(room, message) {
   var re = /^\/([^\s]*) (.*)/;
-  console.log(message.body);
+  var self = this;
   if(matches = message.body.match(re)) {
     var command = matches[1];
     var arguments = matches[2];
-    self.emit(command, arguments);
+    self.emit(command, room, message, arguments);
   }
 };
 
