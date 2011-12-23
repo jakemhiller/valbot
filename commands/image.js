@@ -30,7 +30,7 @@ imageMessage = function(msg, room, safesearch) {
 };
 
 initialize = function(val) {
-  val.on('TextMessage', imageMessage);
+  //val.on('TextMessage', imageMessage);
 };
 
 module.exports.initialize = initialize;

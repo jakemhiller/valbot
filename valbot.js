@@ -2,18 +2,25 @@ var sys = require('sys'),
     events = require('events');
 
 var Val = function(instance, room_id) {
+  
   this.room_id = room_id;
   this.instance = instance;
+
+  events.EventEmitter.call(this);
 };
 
-sys.inherits(Val, events.EventEmitter);
+Val.super_ = events.EventEmitter;
+Val.prototype = Object.create(events.EventEmitter.prototype, {
+    constructor: {
+        value: Val,
+        enumerable: false
+    }
+});
 
 Val.prototype.init = function(room) {
-  var commands = this.commands;
+  var self = this;
   room.listen(function(message){
-    for(command in commands[message.type]) {
-      self.emit(message.type, room, message);
-    };
+    self.emit(message.type, room, message);
   })
 };
 
