@@ -25,3 +25,9 @@ urbanMessage = function(msg, room) {
 
 };
 
+initialize = function(val) {
+  val.on('TextMessage', urbanMessage);
+};
+
+module.exports.initialize = initialize;
+

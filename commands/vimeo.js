@@ -16,3 +16,10 @@ vimeoMessage = function(msg, room) {
       });
     });
 };
+
+
+initialize = function(val) {
+  val.on('TextMessage', vimeoMessage);
+};
+
+module.exports.initialize = initialize;

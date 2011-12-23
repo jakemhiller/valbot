@@ -9,3 +9,9 @@ lolMessage = function(msg, room) {
     });
 
 };
+
+initialize = function(val) {
+  val.on('TextMessage', lolMessage);
+};
+
+module.exports.initialize = initialize;
