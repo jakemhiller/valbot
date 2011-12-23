@@ -18,10 +18,9 @@ lolMessage = function(room, message) {
   	var site = http.request(requestOptions, function(request){
   		//console.log('!STATUS: '+ request.statusCode);
   	});
+
   	site.on('response', function(httpResponse){
-  		//console.log('STATUS: %s', httpResponse.statusCode);
   		if(httpResponse.statusCode == 200){
-  			// console.log('should speak %s now', siteUrl.href);
   			room.speak(siteUrl.href, function(error, response){
   				//console.log("image message sent: %s.", response.msg.created_at);
   			});
