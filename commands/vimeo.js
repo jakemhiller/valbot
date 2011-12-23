@@ -10,9 +10,17 @@ vimeoMessage = function(room, message) {
     console.log('URL:'+url);
 
     rest.get(url).on('complete', function(data) {
-      var thumb = data[0].thumbnail_large
+      var thumb = data[0].thumbnail_large;
+      var titleData = data[0].title;
 
+      var title = titleData+" - "+message.body;
+
+      // Thumbnail image
       room.speak(thumb, function(error, response) {
+        // console.log('Thumbnail found'+response)
+      });
+      // Title + Link
+      room.speak(title, function(error, response) {
         // console.log('Thumbnail found'+response)
       });
     });
