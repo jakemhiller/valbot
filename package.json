@@ -1,0 +1,14 @@
+{
+    "name": "Valbot"
+  , "version": "0.0.2"
+  , "private": true
+  , "dependencies": {
+      "campfire": "= 0.1.1",
+      "contextify": "= 0.0.7",
+      "cssom": "= 0.2.1",
+      "jquery": "= 1.6.3",
+      "n-vimeo": "= 0.2.1",
+      "restler": "= 0.2.3",
+      "scraper": "0.0.9"
+  }
+}

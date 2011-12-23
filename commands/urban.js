@@ -1,9 +1,10 @@
 var Command = require("../lib/command.js").Command;
 var scraper = require('scraper');
 
-urbanMessage = function(msg, room) {
+urbanMessage = function(room, message) {
+  if(Command.getMatch('urban', message.body)) {
     console.log('urban');
-    term = Command.filterMessage('urban', msg.body);
+    term = Command.filterMessage('urban', message.body);
     var url = "http://www.urbandictionary.com/define.php?term=" + escape(term);
     scraper(url, function(err, $) {
         if (err) {
@@ -32,6 +33,12 @@ urbanMessage = function(msg, room) {
 		}
 
     });
-
+  };
 };
+
+initialize = function(val) {
+  val.on('TextMessage', urbanMessage);
+};
+
+module.exports.initialize = initialize;
 
