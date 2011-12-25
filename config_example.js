@@ -11,7 +11,7 @@ config.safesearch = false;
 // Commands
 
 //-- Image search
-config.bing       = '5999A562BE9FABCA7FFBD671D2BACAB4D9BFD3A7'
+config.bing       = 'your bing token'
 
 //-- lol (hosted folder full of animated gifs)
 config.lolFolder  = "http://lol.jaykillah.net/tmp/"
