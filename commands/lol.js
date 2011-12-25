@@ -5,7 +5,7 @@ var url = require('url');
 lolMessage = function(room, message) {
   if(Command.getMatch('lol', message.body)) {
     var term = Command.filterMessage('lol', message.body);
-    var gifUrl = "http://lol.jaykillah.net/tmp/" + term + ".gif";
+    var gifUrl = config.lolFolder + term + ".gif";
     var siteUrl = url.parse(gifUrl);
 
   	var requestOptions = {

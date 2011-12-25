@@ -1,9 +1,9 @@
 var Command = require("../lib/command.js").Command;
-var scraper = require('scraper');
 var rest = require('restler');
-var safesearch = false;
 
 var config    = require("../config.js");
+
+var safesearch = config.safesearch;
 
 imageMessage = function(room, message, safesearch) {
   if(Command.getMatch('image', message.body)) {
