@@ -1,4 +1,4 @@
-var sys = require('sys'),
+var sys = require('util'),
     events = require('events');
 
 var Val = function(instance, room_id) {
