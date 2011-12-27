@@ -1,4 +1,4 @@
-var sys = require('util'),
+var sys = require('sys'),
     events = require('events');
 
 var Val = function(instance, room_id) {
@@ -7,7 +7,7 @@ var Val = function(instance, room_id) {
   this.instance = instance;
 
   events.EventEmitter.call(this);
-  
+
 };
 
 Val.super_ = events.EventEmitter;
