@@ -1,6 +1,9 @@
-var Command = require("../lib/command.js").Command;
-var http = require('http');
-var url = require('url');
+var Command   = require("../lib/command.js").Command;
+var http      = require('http');
+var url       = require('url');
+
+var config    = require("../config.js");
+
 
 lolMessage = function(room, message) {
   if(Command.getMatch('lol', message.body)) {

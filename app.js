@@ -6,6 +6,7 @@ var fs        = require("fs");
 var config    = require("../valbot/config.js");
 
 var commandPath = './commands/';
+
 function bootCommands(val) {
   fs.readdir(commandPath, function(err, files) {
     if (err) throw err;
