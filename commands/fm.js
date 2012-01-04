@@ -1,14 +1,11 @@
 var Command = require("../lib/command.js").Command;
-//var scraper = require('scraper');
 
-fmMessage = function(room, message) {
-  if(Command.getMatch('fm', message.body)) {
+fmMessage = function(room, message, arguments) {
     room.speak('fm command is not implemented yet');
-  };
 };
 
 initialize = function(val) {
-  val.on('TextMessage', fmMessage);
+    val.on('fm', fmMessage);
 };
 
 
