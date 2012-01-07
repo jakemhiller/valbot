@@ -1,6 +1,6 @@
 var Command = require("../lib/command.js").Command;
 
-fmMessage = function(room, message, arguments) {
+fmMessage = function(room, message, term) {
     room.speak('fm command is not implemented yet');
 };
 

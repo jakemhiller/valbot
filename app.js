@@ -30,7 +30,9 @@ var instance = new Campfire({
 });
 
 var val = new Val(instance, room_id);
+
 bootCommands(val);
+
 instance.join(room_id, function(error, room) {
   val.init(room);
 });

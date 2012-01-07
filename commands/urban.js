@@ -1,43 +1,28 @@
 var Command = require("../lib/command.js").Command;
-var scraper = require('scraper');
+var rest = require('restler');
 
-urbanMessage = function(room, message) {
-  if(Command.getMatch('urban', message.body)) {
-    console.log('urban');
-    term = Command.filterMessage('urban', message.body);
-    var url = "http://www.urbandictionary.com/define.php?term=" + escape(term);
-    scraper(url, function(err, $) {
-        if (err) {
-            throw err;
-        }
+urbanMessage = function(room, message, term) {
+  // The iphone formatted search page returns JSON, yay!
+  var url = "http://www.urbandictionary.com/iphone/search/define?term=" + escape(term);
 
-        if ($('div#not_defined_yet').length > 0) {
-            room.speak(term + ' is not defined on urbandictionary.com.', function(error, response) {
+  rest.get(url).on('complete', function(data) {
 
-            });
-        }
-        else if($('div.definition').length > 0) {
-            word = $('td.word').first().text().replace(/\r|\n/, " ");
-            definition = $('div.definition').first().text().replace(/\r|\n/, " ");
-            //link = "http://www.urbandictionary.com/define.php?term="+escape(term);
+    if (data.result_type == 'exact') {
+      urban_result = data.list[1].word +': '+ data.list[1].definition + data.list[1].permalink;
+    }
+    else
+    {
+      urban_result = "Sorry, there is no Urban Dictionary definition for "+term;
+    };
 
-        	var urbanDef = word + ': ' + definition;
-
-	        room.speak(urbanDef,
-	        function(error, response) {
-	            room.speak(url,
-	            function(error, response) {
-
-	                });
-	        });
-		}
+    room.speak(urban_result, function(error, response) {
 
     });
-  };
+  });
 };
 
 initialize = function(val) {
-  val.on('TextMessage', urbanMessage);
+  val.on('urban', urbanMessage);
 };
 
 module.exports.initialize = initialize;

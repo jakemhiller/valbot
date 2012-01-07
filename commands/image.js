@@ -5,33 +5,30 @@ var config    = require("../config.js");
 
 var safesearch = config.safesearch;
 
-imageMessage = function(room, message, safesearch) {
-  if(Command.getMatch('image', message.body)) {
-
-    term = Command.filterMessage('image', message.body);
+imageMessage = function(room, message, term, safesearch) {
 
     var url = "http://api.bing.net/json.aspx?"
 
-            // Common request fields (required)
-            + "AppId=" + config.bing
-            + "&Query=" + encodeURI(term)
-            + "&Sources=Image"
+      // Common request fields (required)
+      + "AppId=" + config.bing
+      + "&Query=" + encodeURI(term)
+      + "&Sources=Image"
 
-            // Common request fields (optional)
-            + "&Version=2.0"
-            + "&Market=en-us"
+      // Common request fields (optional)
+      + "&Version=2.0"
+      + "&Market=en-us"
 
-            if (safesearch == false) {
-              + "&Adult=Off"
-            }
-            else
-            {
-              + "&Adult=Moderate"
-            }
+      if (safesearch == false) {
+        + "&Adult=Off"
+      }
+      else
+      {
+        + "&Adult=Moderate"
+      }
 
-            // Image-specific request fields (optional)
-            + "&Image.Count=15"
-            + "&Image.Offset=0";
+      // Image-specific request fields (optional)
+      + "&Image.Count=15"
+      + "&Image.Offset=0";
 
     rest.get(url).on('complete', function(data) {
       var randomImage = Command.getRandom(data.SearchResponse.Image.Results)
@@ -44,12 +41,10 @@ imageMessage = function(room, message, safesearch) {
         // console.log('Image found'+response)
       });
     });
-
-  };
 };
 
 initialize = function(val) {
-  val.on('TextMessage', imageMessage);
+    val.on('image', imageMessage);
 };
 
 module.exports.initialize = initialize;
